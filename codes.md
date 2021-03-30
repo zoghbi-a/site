@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Codes & Tools
-subtitle: A Collection of Codes Developed Over The Years
+subtitle: A collection of codes developed over the years
 ---
 
 Some of the codes that I have developed over the years are published in my github site. I am publishing them for the sake of reproducibility of the published research, and also that someone may find them useful.
