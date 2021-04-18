@@ -19,7 +19,7 @@ Documentations of the codes is usually embedded within the code. From time to ti
 ---
 
 ### [aztools](/aztools)
-This is a collection of python tools that I have been using over the years in the analysis of Astronomical time series and X-ray telescope data. It handles light curves from X-ray satellites, calculated power and cross/spectra, phase/time lags and related products.
+This is a [collection of python tools](/aztools) that I have been using over the years in the analysis of Astronomical time series and X-ray telescope data. It handles light curves from X-ray satellites, calculated power and cross/spectra, phase/time lags and related products.
 
 Some of the functionality in `aztools.data_tools` can be useful in reducing and calibrating X-ray data from common X-ray telescopes. They organize calls to [heasoft](https://heasarc.gsfc.nasa.gov/docs/software/heasoft/) functionality and allows for reducing multiple datasets in parallel for example.
 
@@ -28,10 +28,13 @@ Examples of using the `aztools` package can be found in the [relevant posts](/ta
 ---
 
 ### [fqlag](/fqlag)
-`fqlag` is a python library to characterize the variability in the frequency domain of light curves that are not continuously sampled. This supersedes the `plag` library, with a different implementation that is more stable during the calculations.
+`fqlag` is a python library to [characterize the variability in the frequency domain of light curves that are not continuously sampled](/fqlag). This supersedes the `plag` library, with a different implementation that is more stable during the calculations.
 
-Both libraries implement the method presented in Zoghbi et. al. (2013) paper (Astrophysical Journal; 2013. 777. 24) to calculate periodogram and time/phase lags in the frequency domain from unevenly-sampled light curves.
+Both libraries implement the method presented in Zoghbi et. al. (2013) paper ([Astrophysical Journal; 2013. 777. 24](https://arxiv.org/abs/1308.5852)) to calculate periodogram and time/phase lags in the frequency domain from unevenly-sampled light curves.
 
+The following are two examples of using `fqlag`:
+- [Calculating frequency-dependent power and time delays](/fqlag/tutorials/getting-started.html)
+- [Time Series Forecasting and Interpolation] (/2020-03-12-time-series-forecasting-interpolation)
 
 
 ---
@@ -39,12 +42,12 @@ Both libraries implement the method presented in Zoghbi et. al. (2013) paper (As
 ### [xspec_emcee](/xspec_emcee)
 This is an implementation of the Goodman & Weare’s [Affine Invariant Markov chain Monte Carlo (MCMC) Ensemble sampler](http://msp.berkeley.edu/camcos/2010/5-1/p04.xhtml) in [XSPEC](https://heasarc.gsfc.nasa.gov/xanadu/xspec/), which is an X-Ray Spectral Fitting Package, distributed as part of the high energy astrophysics software package, HEASoft from NASA. 
 
-XSPEC has its own implementation of the GW algorithm, but I find it difficult to use, and sometimes fails to converge, so I created my own implementation, which gives more control on the MCMC chains.
+XSPEC has its own implementation of the GW algorithm, but I find it difficult to use, and sometimes fails to converge, so I created [my own implementation](/xspec_emcee), which gives more control on the MCMC chains.
 
 --- 
 
 ### [azTcl](/azTcl)
-This repository contains a collection of scripts written in `tcl` to be used within `XSPEC`, [the X-ray spectral modeling package](https://heasarc.gsfc.nasa.gov/xanadu/xspec/). It contains several useful functions that streamlines some of the `xspec` functionality. Examples of the functions include:
+This repository contains a collection of scripts written in `tcl` to be used within `XSPEC`, [the X-ray spectral modeling package](https://heasarc.gsfc.nasa.gov/xanadu/xspec/). It contains several [useful functions that streamlines some of the `xspec` functionality](/azTcl). Examples of the functions include:
 
 - `az_scan_en_norm` and `az_sim_dchi2`: which can be used for scanning fit residuals for spectral emission or absorption lines and assessing their significance. 
 - `az_calc_errors`: Calculate the uncertainties on the fit parameters, making sure to restart if a new fit is found, save progress, and save the final results in clean manner.
