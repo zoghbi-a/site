@@ -9,6 +9,7 @@ Some of the codes that I have developed over the years are published in my githu
 Documentations of the codes is usually embedded within the code. From time to time, I write short posts to highlight useful features:
 
 - [aztools](#aztools): A collection of python tools for spectral/timing of X-ray data.
+- [fqlag](#fqlag): A python library for modeling time series (light curves) to measure the Fourier frequency-dependent power and time lags using Gaussian Porcesses.
 - [xspec_emcee](#xspec_emcee): Affine Invariant Markov chain Monte Carlo (MCMC) Ensemble sampler in XSPEC
 - [azTcl](#aztcl): Spectral modeling scripts in tcl to run inside [xspec](https://heasarc.gsfc.nasa.gov/xanadu/xspec/)
 - [gr](#gr): Ray tracing code in the curved space-time of for General Relativity
@@ -23,6 +24,15 @@ This is a collection of python tools that I have been using over the years in th
 Some of the functionality in `aztools.data_tools` can be useful in reducing and calibrating X-ray data from common X-ray telescopes. They organize calls to [heasoft](https://heasarc.gsfc.nasa.gov/docs/software/heasoft/) functionality and allows for reducing multiple datasets in parallel for example.
 
 Examples of using the `aztools` package can be found in the [relevant posts](/tags/#aztools), and in the notebooks associated with [published papers](/publications).
+
+---
+
+### [fqlag](/fqlag)
+`fqlag` is a python library to characterize the variability in the frequency domain of light curves that are not continuously sampled. This supersedes the `plag` library, with a different implementation that is more stable during the calculations.
+
+Both libraries implement the method presented in Zoghbi et. al. (2013) paper (Astrophysical Journal; 2013. 777. 24) to calculate periodogram and time/phase lags in the frequency domain from unevenly-sampled light curves.
+
+
 
 ---
 
