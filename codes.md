@@ -34,7 +34,7 @@ Both libraries implement the method presented in Zoghbi et. al. (2013) paper ([A
 
 The following are two examples of using `fqlag`:
 - [Calculating frequency-dependent power and time delays](/fqlag/tutorials/getting-started.html)
-- [Time Series Forecasting and Interpolation] (/2020-03-12-time-series-forecasting-interpolation)
+- [Time Series Forecasting and Interpolation](/2020-03-12-time-series-forecasting-interpolation)
 
 
 ---
@@ -62,4 +62,4 @@ This repository contains a collection of scripts written in `tcl` to be used wit
 ---
 
 ### [gr](/gr)
-A ray tracing code for simulating light rays around a black hole implemented in C++ using gsl. This solves the partial differential equations of the motion of a photon in curved space-time to track how the photons move from around the black hole to the detecting telescope.
+A [ray tracing code](/gr) for simulating light rays around a black hole implemented in C++ using gsl. This solves the partial differential equations of the motion of a photon in curved space-time to track how the photons move from around the black hole to the detecting telescope.
